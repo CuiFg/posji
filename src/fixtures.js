@@ -40,3 +40,20 @@ function loadAllItems() {
     }
   ];
 }
+
+function loadPromotions()
+{
+  return [
+    {
+      type:'BUY_TWO_GIVE_ONE',
+      barcodes:['ITEM000000','ITEM000001']
+    },
+
+    {
+      type:'OTHER_PROMOTION',
+      barcodes:['ITEM000002','ITEM0000003']
+    }
+
+  ];
+
+}
