@@ -8,15 +8,19 @@
     ITEM000002-3.5,
     ITEM000003-2
 ];
-let formattedTags = parseTag(tags);
-let mergedBarcode = mergeBarcodes(formattedTags);
-let items = loadAllItems();
-let cartItemsAmount =getCartItems(mergedBarcode, items);
-let PromotionsItems = loadPromotions();
-let cartItemsAmountType = getCartItemsAmountType(PromotionsItems,cartItemsAmount);
-let cartItemsAmountType = getCartItemsAmountType(PromotionsItems,cartItemsAmount);
-let PromotedItems = getPromotedItems(cartItemsAmountType);
-*/
+
+/*function print(subTotalItems,total,saveMoney)
+ {
+ let formattedTags = parseTag(tags);
+ let mergedBarcode = mergeBarcodes(formattedTags);
+ let items = loadAllItems();
+ let cartItemsAmount =getCartItems(mergedBarcode, items);
+ let PromotionsItems = loadPromotions();
+ let cartItemsAmountType = getCartItemsAmountType(PromotionsItems,cartItemsAmount);
+ //let cartItemsAmountType = getCartItemsAmountType(PromotionsItems,cartItemsAmount);
+ let PromotedItems = getPromotedItems(cartItemsAmountType);
+ }*/
+
 function parseTag(tags)
 {
     return tags.map(function(tag){
@@ -139,15 +143,7 @@ function getSaveMoney(subTotalItems)
     return saveMoney;
 }
 
-function print(subTotalItems,total,saveMoney)
-{
-    /*for(let i =0;i< subTotalItems.length; i++)
-    {
-        console.log('名秤'+ subTotalItems[i].name);
-    }*/
 
-
-}
 
 
 
